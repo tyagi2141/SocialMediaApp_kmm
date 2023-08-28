@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="username_hint">Username</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="signup_hint">Create Account</string>
+    <string name="signin_hint">Sign In</string>
+    <string name="Login_hint">Login</string>
+    <string name="login_destination_title">Login</string>
+    <string name="signup_destination_title">SignUp</string>
+    <string name="home_destination_title">Home</string>
+    <string name="no_destination"></string>
+    <string name="followe_Button">follow</string>
+    <string name="onboarding_title">who to follow</string>
+    <string name="onboarding_description">following the user ,list visible below</string>
+    <string name="onboarding_done_button">Done</string>
+    <string name="post_detail_title">Post Detail</string>
+    <string name="loading_error_message">error loading data</string>
+    <string name="retry_button_text">retry</string>
+</resources>

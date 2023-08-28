@@ -1,0 +1,15 @@
+<resources>
+    <style name="AppTheme" parent="android:Theme.Material.NoActionBar"/>
+
+    <style name="Theme.SplashScreenApp" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">#061E9F</item>
+        <item name="windowSplashScreenBackground">#061E9F</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/light_image_place_holder</item>
+        <item name="windowSplashScreenAnimationDuration">50000</item>
+
+    </style>
+
+    <style name="SplashScreenTheme" parent="Theme.SplashScreenApp">
+        <item name="android:windowBackground">#99BDCD</item>
+    </style>
+</resources>
