@@ -19,7 +19,7 @@ val samplePosts = listOf(
     Post(
         id = "11",
         text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        imageUrl = "https://picsum.photos/400",
+        imageUrl = "https://picsum.photos/200",
         createdAt = "20 min",
         likesCount = 12,
         commentCount = 3,
@@ -30,13 +30,13 @@ val samplePosts = listOf(
     Post(
         id = "12",
         text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        imageUrl = "https://picsum.photos/id/237/200/300",
+        imageUrl = "https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U",
         createdAt = "May 03, 2023",
         likesCount = 121,
         commentCount = 23,
         authorId = 2,
         authorName = "John Cena",
-        authorImage = "https://picsum.photos/id/237/200/300"
+        authorImage = "https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U"
     ),
     Post(
         id = "13",

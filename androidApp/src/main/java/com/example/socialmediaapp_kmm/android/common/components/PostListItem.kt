@@ -67,7 +67,7 @@ fun PostListItem(
         Log.e("kjnjknjknk", "${post.authorName} == ${post.id} == ${post.imageUrl}")
         AsyncImage(
             model = ImageRequest.Builder(LocalContext.current)
-                .data(post.imageUrl)
+                .data( post.imageUrl)
                 .crossfade(true)
                 .memoryCachePolicy(
                     CachePolicy.DISABLED
@@ -76,7 +76,8 @@ fun PostListItem(
             contentDescription = null,
             modifier = modifier
                 .fillMaxWidth()
-                .padding(LargeSpacing).weight(1f),
+                .padding(LargeSpacing)
+                .weight(1f),
             contentScale = ContentScale.Crop,
             placeholder = if (MaterialTheme.colors.isLight) {
                 painterResource(id = R.drawable.light_image_place_holder)

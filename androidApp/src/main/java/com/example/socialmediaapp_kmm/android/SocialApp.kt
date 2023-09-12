@@ -58,6 +58,7 @@ fun SocialApp(token: String?) {
 
     LaunchedEffect(key1 = token, block = {
 
+        // if (token != null && token.isEmpty())
 
         if (token.isNullOrBlank()) {
             scale.animateTo(

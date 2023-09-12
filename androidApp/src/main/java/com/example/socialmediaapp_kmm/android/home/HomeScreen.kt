@@ -1,15 +1,11 @@
 package com.example.socialmediaapp_kmm.android.home
 
 import android.content.res.Configuration
-import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
-import androidx.compose.foundation.rememberScrollState
-import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.ExperimentalMaterialApi
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
@@ -58,24 +54,24 @@ fun HomeScreen(
     ) {
 
 
+        LazyColumn(
+            modifier = modifier
+                .fillMaxWidth()
+        ) {
 
-       LazyColumn(modifier = modifier
-            .fillMaxWidth()
-            ) {
-
-           if (onBoardingUiState.shouldShowOnBoarding) {
-                 item(key = "onBoardingSection") {
-                     OnBoardingSection(
-                         users = onBoardingUiState.users,
-                         onUserClick = { onProfileClick(it.id) },
-                         onFollowButtonClick = onFollowButtonClick
-                     ) {
-                         onBoardingFinish()
-                     }
-                 }
+            if (onBoardingUiState.shouldShowOnBoarding) {
+                item(key = "onBoardingSection") {
+                    OnBoardingSection(
+                        users = onBoardingUiState.users,
+                        onUserClick = { onProfileClick(it.id) },
+                        onFollowButtonClick = onFollowButtonClick
+                    ) {
+                        onBoardingFinish()
+                    }
+                }
 
 
-           }
+            }
 
             items(
                 items = postsUiState.posts,
@@ -121,3 +117,9 @@ private fun HomeScreenPreview() {
         }
     }
 }
+
+//https://screenshot.googleplex.com/3frc9b8n4JJ9ukq
+//https://screenshot.googleplex.com/9YA3x9M5dcssDpn
+//https://screenshot.googleplex.com/3Xi4XpLummzjf3z
+//https://screenshot.googleplex.com/BkuJRUXes9ktC2Y
+
