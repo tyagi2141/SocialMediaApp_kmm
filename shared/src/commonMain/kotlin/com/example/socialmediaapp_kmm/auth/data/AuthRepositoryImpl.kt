@@ -9,8 +9,7 @@ import kotlinx.coroutines.withContext
 internal class AuthRepositoryImpl(
     val dispatcher: DispatcherProvider,
     val authService: AuthService
-) :
-    AuthRepository {
+) : AuthRepository {
     override suspend fun signUp(
         name: String,
         email: String,
@@ -33,19 +32,19 @@ internal class AuthRepositoryImpl(
     }
 
     override suspend fun signIn(email: String, password: String): Result<AuthResultData> {
-       return withContext(dispatcher.io){
-           try {
-               val request = SignInRequest(email, password)
-               val authResponse = authService.signIn(request)
+        return withContext(dispatcher.io) {
+            try {
+                val request = SignInRequest(email, password)
+                val authResponse = authService.signIn(request)
 
-               if (authResponse.data == null) {
-                   Result.Error(message = authResponse.errorMessage!!)
-               } else {
-                   Result.Success(data = authResponse.data.toAuthResultData())
-               }
-           } catch (e: Exception) {
-               Result.Error(message = "Oops, we could not send your request, try later!")
-           }
-       }
+                if (authResponse.data == null) {
+                    Result.Error(message = authResponse.errorMessage!!)
+                } else {
+                    Result.Success(data = authResponse.data.toAuthResultData())
+                }
+            } catch (e: Exception) {
+                Result.Error(message = "Oops, we could not send your request, try later!")
+            }
+        }
     }
 }

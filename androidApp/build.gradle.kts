@@ -41,7 +41,6 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-
     applicationVariants.all {
         addJavaSourceFoldersToModel(
             File(buildDir, "generated/ksp/$name/kotlin")

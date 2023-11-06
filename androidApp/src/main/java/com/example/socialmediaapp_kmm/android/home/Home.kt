@@ -1,5 +1,6 @@
 package com.example.socialmediaapp_kmm.android.home
 
+import android.util.Log
 import androidx.compose.runtime.Composable
 import com.example.socialmediaapp_kmm.android.destinations.PostDetailsDestination
 import com.ramcosta.composedestinations.annotation.Destination
@@ -16,9 +17,16 @@ fun Home(navigator: DestinationsNavigator) {
         onBoardingUiState = viewModel.onBoardingUiState,
         postsUiState = viewModel.postUiState,
         onPostClick = { post -> navigator.navigate(PostDetailsDestination(postId = post.id)) },
-        onProfileClick = {},
-        onLikeClick = { },
-        onCommentClick = { },
+        onProfileClick = {
+
+            Log.e("hbhjbbhb", "Profile")
+        },
+        onLikeClick = {
+            Log.e("hbhjbbhb", "Like.....")
+        },
+        onCommentClick = {
+            Log.e("hbhjbbhb", "Comment....")
+        },
         onFollowButtonClick = { _, _ -> },
         onBoardingFinish = { }, fetchData = { viewModel.fetchData() }
     )

@@ -11,7 +11,6 @@ import org.koin.androidx.compose.koinViewModel
 @Destination
 @Composable
 fun Login(navigator: DestinationsNavigator) {
-
     val viewModel: LoginViewModel = koinViewModel()
 
     LoginScreen(

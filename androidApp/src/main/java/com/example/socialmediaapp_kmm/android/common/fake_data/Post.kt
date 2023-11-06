@@ -19,13 +19,13 @@ val samplePosts = listOf(
     Post(
         id = "11",
         text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        imageUrl = "https://picsum.photos/200",
+        imageUrl = "https://fastly.picsum.photos/id/818/200/200.jpg?hmac=gfhJZngz3JDsSmE1obNFY5OeAQBVsJLED2VkwuGsC-o",
         createdAt = "20 min",
         likesCount = 12,
         commentCount = 3,
         authorId = 1,
         authorName = "Mr Dip",
-        authorImage = "https://picsum.photos/200"
+        authorImage = "https://fastly.picsum.photos/id/818/200/200.jpg?hmac=gfhJZngz3JDsSmE1obNFY5OeAQBVsJLED2VkwuGsC-o"
     ),
     Post(
         id = "12",
@@ -41,13 +41,13 @@ val samplePosts = listOf(
     Post(
         id = "13",
         text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        imageUrl = "https://picsum.photos/400",
+        imageUrl = "https://fastly.picsum.photos/id/818/200/200.jpg?hmac=gfhJZngz3JDsSmE1obNFY5OeAQBVsJLED2VkwuGsC-o",
         createdAt = "Apr 12, 2023",
         likesCount = 221,
         commentCount = 41,
         authorId = 3,
         authorName = "Cristiano",
-        authorImage = "https://picsum.photos/200"
+        authorImage = "https://fastly.picsum.photos/id/818/200/200.jpg?hmac=gfhJZngz3JDsSmE1obNFY5OeAQBVsJLED2VkwuGsC-o"
     ),
     Post(
         id = "14",

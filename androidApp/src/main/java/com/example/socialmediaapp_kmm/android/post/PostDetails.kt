@@ -13,7 +13,6 @@ fun PostDetails(navigator: DestinationsNavigator?, postId: String) {
 
     // val viewModel: PostDetailViewModel = koinViewModel()
 
-    Log.e("kjvbjkdfbvj", "$postId")
 
     val viewModel: PostDetailViewModel = koinViewModel()
 

@@ -1,5 +1,6 @@
 package com.example.socialmediaapp_kmm.android.auth.login
 
+import android.inputmethodservice.Keyboard
 import android.widget.Toast
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -79,8 +80,7 @@ fun LoginScreen(
         }
 
         if (uiState.isAuthentication) {
-            CircularProgressIndicator()
-        }
+            CircularProgressIndicator() }
 
     }
 
@@ -108,7 +108,6 @@ fun goToSignUp(modifier: Modifier = Modifier, onNavigateToSignUp: () -> Unit) {
             modifier = Modifier
                 .padding(start = 10.dp)
                 .clickable { onNavigateToSignUp() })
-
     }
 }
 
